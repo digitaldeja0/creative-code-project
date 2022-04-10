@@ -1,0 +1,56 @@
+:root{
+    --dark-clr: #000000;
+    --dark-blue:#150050;
+    --yellow:#FFFA4D;
+    --light-clr: #dfffff;
+    --ff1:'Grape Nuts', cursive;
+    --ff2:'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--dark-clr);
+    color:var(--light-clr);
+    font-family: var(--ff1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.head-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/moon.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+  /* CSS Animations */
+  
+  .header-text{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 10s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
