@@ -19,24 +19,30 @@
       href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap"
       rel="stylesheet"
     />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
     <!-- CSS Sheet -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container head-div">
       <h1 class="header-text">Midnight Ocean Dreams</h1>
+      <div class="btn-div">
+        <a href="#enter-section" class="btn enter-btn">Adventure Begins</a>
+      </div>
     </div>
 
     <div class="quote-div center-class">
-      <p class="quote-p">
+      <h3 class="quote-h3">
         “What would an ocean be without a monster lurking in the dark? It would
         be like sleep without dreams.”
-      </p>
+      </h3>
       <p class="author-p">― Werner Herzog</p>
     </div>
 
     <div>
       <video
+        class="video-full"
         playsinline
         autoplay
         muted
@@ -48,8 +54,63 @@
       </video>
     </div>
 
-    <div class="btn-div">
-      <a href="#" class="btn enter-btn">Enter</a>
+    <!-- <div class="btn-div">
+      <a href="#enter-section" class="btn enter-btn">Adventure Begins</a>
+    </div> -->
+
+    <div class="about-div center-class">
+      <p class="about-p">
+        Midnight Ocean Dream is a digital experince. <br />
+        Collect cute fish and find the beautiful mermaid at the bottom of the
+        ocean.
+      </p>
     </div>
+
+    <div class="container-fish">
+      <div class="fish fish1">
+        <img class="fish-img" src="./images/fish/fish1.png" alt="fish" />
+      </div>
+      <div class="fish fish2">
+        <img class="fish-img" src="./images/fish/fish2.png" alt="fish" />
+      </div>
+      <div class="fish fish3">
+        <img class="fish-img" src="./images/fish/fish3.png" alt="fish" />
+      </div>
+      <div class="fish fish4">
+        <img class="fish-img" src="./images/fish/fish4.png" alt="fish" />
+      </div>
+      <div class="fish fish5">
+        <img class="fish-img" src="./images/fish/fish5.png" alt="fish" />
+      </div>
+    </div>
+
+    <div class="enter-section center-class" id="enter-section">
+      <h1 class="enter-section-h1">
+        “Wild waves rise and fall when they arrive and that’s what makes the
+        calm sea alive...”
+      </h1>
+    </div>
+
+    <div class="mermaid-div">
+      <video
+        class="video-div mermaid-video"
+        playsinline
+        autoplay
+        muted
+        loop
+        poster="./images/moon.jpg"
+        id="bgvid"
+      >
+        <source src="./video/mermaid.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <footer class="footer center-class">
+      <p class="footer-p">
+        Made with Love By ©Hey Deja LLC. All Rights Reserved.
+      </p>
+    </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
